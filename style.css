@@ -490,4 +490,59 @@ header.scrolled {
     transform: translateX(0) translateY(0);
 }
 
+.work {
+    text-align: center;
+    padding: 5rem 9%;
+    background-color: #111;
+}
+
+.work .heading {
+    font-size: 4rem;
+    color: #b74b4b;
+    margin-bottom: 4rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.work-item {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px #b74b4b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.work-item h3 {
+    font-size: 2rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.work-item p {
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.work-item .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+}
+
+.work-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
 
