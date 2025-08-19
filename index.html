@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,22 +10,23 @@
 <body>
     <header>
         <a href="#" class="logo">AA</a>
-
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
         </nav>
     </header>
-    <section class="home">
+    
+    <section class="home" id="home">
         <div class="home-img">
             <img src="main.jpg" alt="">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Annas Ahmad</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Gameplay Developer and Designer with 3+ years of experience in Unity and Unreal Engine 5. I specialize in building immersive gameplay systems, cozy environments, and interactive experiences across 2D, 3D, and VR/AR projects.</p>
+            <p>Gameplay Developer and Designer with 3+ years of experience in Unity and Unreal Engine 5. 
+               I specialize in building immersive gameplay systems, cozy environments, and interactive experiences 
+               across 2D, 3D, and VR/AR projects.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/annas-janjua-995764316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/SkullFang24" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -34,5 +34,70 @@
             <a href="mailto:adore.annas@gmail.com" class="btn">Contact me</a>
         </div>
     </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My Skills</h2>
+        <div class="skills-icons">
+            <div class="skill"><i class="fa-brands fa-unity"></i><p>Unity Engine</p></div>
+            <div class="skill"><i class="fa-solid fa-cube"></i><p>Unreal Engine 5</p></div>
+            <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+            <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+            <div class="skill"><i class="fa-brands fa-react"></i><p>React Native</p></div>
+            <div class="skill"><i class="fa-solid fa-database"></i><p>SQL</p></div>
+            <div class="skill"><i class="fa-solid fa-cubes"></i><p>Blender</p></div>
+            <div class="skill"><i class="fa-brands fa-git-alt"></i><p>Git/GitHub</p></div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+    <h2 class="heading">Experience</h2>
+
+    <div class="timeline">
+
+        <!-- Left container -->
+        <div class="container left">
+            <span class="year">Aug 2022 - Sep 2024</span>
+            <div class="content">
+                <h3>Junior Gameplay Developer</h3>
+                <h4>XREV Studios</h4>
+                <p>Worked on 3D games in Unity & Unreal Engine 5, implementing enemy AI, player mechanics, game logic systems, Blueprint scripting, and level design.</p>
+            </div>
+        </div>
+        
+        <!-- Right container -->
+        <div class="container right">
+            <span class="year">Oct 2023 - Feb 2024</span>
+            <div class="content">
+                <h3>Indie Game Developer</h3>
+                <h4>XREV Studios</h4>
+                <p>Developed AR games using Unity and AR Foundation, implementing interactive gameplay and 3D assets.</p>
+            </div>
+        </div>
+
+        <!-- Left container -->
+        <div class="container left">
+            <span class="year">June 2022</span>
+            <div class="content">
+                <h3>Gameplay Developer Intern</h3>
+                <h4>XREV Studios</h4>
+                <p>Learned and worked on 3D games in Unity, implementing enemy AI, player mechanics, and game logic systems.</p>
+            </div>
+        </div>
+
+        <!-- Right container -->
+        <div class="container right">
+            <span class="year">2022</span>
+            <div class="content">
+                <h3>Freelance Automation Developer</h3>
+                <h4>Self-Employment</h4>
+                <p>Built automation bots using Python and Selenium to streamline repetitive tasks for clients.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -267,3 +267,196 @@ span{
         margin-top: 4rem;
     }
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    background: #111;
+}
+
+.skills .heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #b74b4b;
+}
+
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.skill {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b74b4b;
+}
+
+.skill p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #b74b4b;
+}
+
+header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 1rem 9%;
+    transition: all 0.3s ease;
+}
+
+/* Timeline styles for Experience section */
+.experience .heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #b74b4b;
+    position: relative;
+    display: inline-block;
+}
+
+.experience .heading::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #b74b4b;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s ease;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Central vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #b74b4b;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Containers */
+.container {
+    padding: 2rem 4rem;
+    position: relative;
+    width: 50%;
+}
+
+/* Left / Right placement */
+.container.left { left: 0; }
+.container.right { left: 50%; }
+
+/* Content box */
+.content {
+    background-color: #1a1a1a;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 0 15px #b74b4b;
+}
+
+/* Small circle on timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #b74b4b;
+    border-radius: 50%;
+    top: 2rem;
+    right: -10px;
+    z-index: 2;
+}
+
+.container.right::after { left: -10px; }
+
+/* Adjust content position */
+.container.left .content { margin-left: auto; }
+.container.right .content { margin-right: auto; }
+
+/* Headings inside content */
+.content h3 { font-size: 2rem; color: #b74b4b; margin-bottom: 0.5rem; }
+.content h4 { font-size: 1.6rem; color: white; margin-bottom: 1rem; }
+.content p { font-size: 1.4rem; color: #ccc; }
+
+/* Year styling */
+.container .year {
+    position: absolute;
+    top: 2rem;
+    width: 120px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #b74b4b;
+    text-align: center;
+    z-index: 5; /* above content and circle */
+}
+
+.container.left .year { right: calc(100% + 20px); }
+.container.right .year { left: calc(100% + 20px); }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    .container.right { left: 0; }
+    .container.left .content,
+    .container.right .content { margin: 0; }
+
+    .timeline::after { left: 20px; }
+    .container::after { left: 10px; right: auto; }
+
+    .container .year {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+/* Timeline animation */
+.container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
