@@ -22,19 +22,27 @@ body{
     color: white;
 }
 
-header{
-    margin-top: 20px;
+header {
+    transition: all 0.5s ease;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 100;
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+}
+
+header.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+header.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .logo{
@@ -49,10 +57,17 @@ header{
     transform: scale(1.1);
 }
 
+/* Navigation links aligned to the right */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 nav a{
     font-size: 1.8rem;
     color: white;
-    margin-left: 4rem;
+    margin-left: 4rem; /* spacing between links */
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -64,6 +79,7 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
+/* Responsive mobile menu */
 @media(max-width:995px){
     nav{
         position: absolute;
@@ -77,10 +93,13 @@ nav a.active{
         padding: 1rem solid;
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     nav.active{
-        display: block;
+        display: flex;
     }
 
     nav a{
@@ -96,6 +115,7 @@ nav a.active{
         border-bottom: 0.5rem solid #b74b4b;
     }
 }
+
 
 section{
     min-height: 100vh;
@@ -447,16 +467,27 @@ header.scrolled {
         margin-bottom: 0.5rem;
     }
 }
-/* Timeline animation */
+/* Timeline initial state */
 .container {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease;
 }
 
+/* Left side: start offscreen left */
+.container.left {
+    transform: translateX(-50px) translateY(50px);
+}
+
+/* Right side: start offscreen right */
+.container.right {
+    transform: translateX(50px) translateY(50px);
+}
+
+/* When visible */
 .container.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0) translateY(0);
 }
 
 
