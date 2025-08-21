@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Annas' Portfolio</title>
 </head>
@@ -36,19 +38,99 @@
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">My Skills</h2>
-        <div class="skills-icons">
-            <div class="skill"><i class="fa-brands fa-unity"></i><p>Unity Engine</p></div>
-            <div class="skill"><i class="fa-solid fa-cube"></i><p>Unreal Engine 5</p></div>
-            <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
-            <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
-            <div class="skill"><i class="fa-brands fa-react"></i><p>React Native</p></div>
-            <div class="skill"><i class="fa-solid fa-database"></i><p>SQL</p></div>
-            <div class="skill"><i class="fa-solid fa-cubes"></i><p>Blender</p></div>
-            <div class="skill"><i class="fa-brands fa-git-alt"></i><p>Git/GitHub</p></div>
+    <section id="skills" class="skills-section">
+    <!-- Section heading -->
+    <h2 class="skills-main-heading">My Skills</h2>
+
+    <div class="skills-container">
+        <!-- Left column: skill headings -->
+        <div class="skills-headings">
+        <h3 class="skill-heading" data-skill="game-design">Game & Level Design</h3>
+        <h3 class="skill-heading" data-skill="engines">Engines & Tools</h3>
+        <h3 class="skill-heading" data-skill="system-design">System Design</h3>
+        <h3 class="skill-heading" data-skill="technical">Technical</h3>
+        <h3 class="skill-heading" data-skill="maths">Mathematics & Physics</h3>
+        <h3 class="skill-heading" data-skill="prototyping">Rapid Prototyping</h3>
+        <h3 class="skill-heading" data-skill="vrar">VR/AR</h3>
+        <h3 class="skill-heading" data-skill="collab">Collaboration & Communication</h3>
         </div>
+
+        <!-- Right column: expanding content -->
+        <div class="skills-details">
+            <div id="game-design" class="skill-content">
+                <ul>
+                    <li>Game loops</li>
+                    <li>World-building</li>
+                    <li>Player flow</li>
+                </ul>
+            </div>
+
+            <div id="engines" class="skill-content">
+                <ul>
+                    <li>Unreal Engine 5</li>
+                    <li>Unity</li>
+                    <li>Blender</li>
+                    <li>Git</li>
+                    <li>Perforce</li>
+                    <li>Jira</li>
+                </ul>
+            </div>
+
+            <div id="system-design" class="skill-content">
+                <ul>
+                    <li>Resource management</li>
+                    <li>Crafting</li>
+                    <li>AI systems</li>
+                </ul>
+            </div>
+
+            <div id="technical" class="skill-content">
+                <ul>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Blueprint Scripting</li>
+                </ul>
+            </div>
+
+            <div id="maths" class="skill-content">
+                <ul>
+                    <li>Linear algebra</li>
+                    <li>Vectors</li>
+                    <li>Matrices</li>
+                    <li>Collisions</li>
+                </ul>
+            </div>
+
+            <div id="prototyping" class="skill-content">
+                <ul>
+                    <li>Ideation</li>
+                    <li>Iteration</li>
+                    <li>Team feedback</li>
+                </ul>
+            </div>
+
+            <div id="vrar" class="skill-content">
+                <ul>
+                    <li>Unity XR</li>
+                    <li>Oculus SDK</li>
+                    <li>ARCore</li>
+                    <li>ARKit</li>
+                </ul>
+            </div>
+
+            <div id="collab" class="skill-content">
+                <ul>
+                    <li>Agile workflow</li>
+                    <li>Team collaboration</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
     </section>
+
 
     <section class="experience" id="experience">
     <h2 class="heading">Experience</h2>

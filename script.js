@@ -61,3 +61,18 @@ timelineContainers.forEach((container, index) => {
     container.style.transitionDelay = `${index * 0.2}s`;
     timelineObserver.observe(container);
 });
+
+document.querySelectorAll(".skill-heading").forEach(heading => {
+  heading.addEventListener("mouseenter", () => {
+    const target = heading.getAttribute("data-skill");
+
+    // Hide all
+    document.querySelectorAll(".skill-content").forEach(content => {
+      content.classList.remove("active");
+    });
+
+    // Show hovered one
+    document.getElementById(target).classList.add("active");
+  });
+});
+
