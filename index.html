@@ -39,145 +39,334 @@
     </section>
 
     <section id="skills" class="skills-section">
-    <!-- Section heading -->
     <h2 class="skills-main-heading">My Skills</h2>
-
-    <div class="skills-container">
-        <!-- Left column: skill headings -->
-        <div class="skills-headings">
-        <h3 class="skill-heading" data-skill="game-design">Game & Level Design</h3>
-        <h3 class="skill-heading" data-skill="engines">Engines & Tools</h3>
-        <h3 class="skill-heading" data-skill="system-design">System Design</h3>
-        <h3 class="skill-heading" data-skill="technical">Technical</h3>
-        <h3 class="skill-heading" data-skill="maths">Mathematics & Physics</h3>
-        <h3 class="skill-heading" data-skill="prototyping">Rapid Prototyping</h3>
-        <h3 class="skill-heading" data-skill="vrar">VR/AR</h3>
-        <h3 class="skill-heading" data-skill="collab">Collaboration & Communication</h3>
-        </div>
-
-        <!-- Right column: expanding content -->
-        <div class="skills-details">
-            <div id="game-design" class="skill-content">
-                <ul>
-                    <li>Game loops</li>
-                    <li>World-building</li>
-                    <li>Player flow</li>
-                </ul>
-            </div>
-
-            <div id="engines" class="skill-content">
-                <ul>
-                    <li>Unreal Engine 5</li>
-                    <li>Unity</li>
-                    <li>Blender</li>
-                    <li>Git</li>
-                    <li>Perforce</li>
-                    <li>Jira</li>
-                </ul>
-            </div>
-
-            <div id="system-design" class="skill-content">
-                <ul>
-                    <li>Resource management</li>
-                    <li>Crafting</li>
-                    <li>AI systems</li>
-                </ul>
-            </div>
-
-            <div id="technical" class="skill-content">
-                <ul>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Blueprint Scripting</li>
-                </ul>
-            </div>
-
-            <div id="maths" class="skill-content">
-                <ul>
-                    <li>Linear algebra</li>
-                    <li>Vectors</li>
-                    <li>Matrices</li>
-                    <li>Collisions</li>
-                </ul>
-            </div>
-
-            <div id="prototyping" class="skill-content">
-                <ul>
-                    <li>Ideation</li>
-                    <li>Iteration</li>
-                    <li>Team feedback</li>
-                </ul>
-            </div>
-
-            <div id="vrar" class="skill-content">
-                <ul>
-                    <li>Unity XR</li>
-                    <li>Oculus SDK</li>
-                    <li>ARCore</li>
-                    <li>ARKit</li>
-                </ul>
-            </div>
-
-            <div id="collab" class="skill-content">
-                <ul>
-                    <li>Agile workflow</li>
-                    <li>Team collaboration</li>
-                    <li>Documentation</li>
-                </ul>
+    
+    <div class="skills-grid">
+        <!-- Game Design Card -->
+        <div class="skill-card" data-skill="game-design">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game & Level Design</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Game loops</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-globe"></i>
+                            <span>World-building</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-road"></i>
+                            <span>Player flow</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
+        
+        <!-- Engines & Tools Card -->
+        <div class="skill-card" data-skill="engines">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Engines & Tools</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine">
+                            <span>Unreal Engine 5</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity">
+                            <span>Unity</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="Blender">
+                            <span>Blender</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                            <span>Git</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira">
+                            <span>Jira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- System Design Card -->
+        <div class="skill-card" data-skill="system-design">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>System Design</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <i class="fas fa-boxes"></i>
+                            <span>Resource management</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Crafting</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Languages Card -->
+        <div class="skill-card" data-skill="technical">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#">
+                            <span>C#</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mathematics & Physics Card -->
+        <div class="skill-card" data-skill="maths">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <h3>Mathematics & Physics</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>Linear algebra</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Vectors</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-th"></i>
+                            <span>Matrices</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Collisions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rapid Prototyping Card -->
+        <div class="skill-card" data-skill="prototyping">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Rapid Prototyping</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <i class="fas fa-sync"></i>
+                            <span>Iteration</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Team feedback</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- VR/AR Card -->
+        <div class="skill-card" data-skill="vrar">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>VR/AR</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity XR">
+                            <span>Unity XR</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://img.favpng.com/10/5/2/oculus-rift-logo-oculus-vr-virtual-reality-png-favpng-34nw2Dss16LfFRNWaHH88XHsB.jpg" alt="Oculus">
+                            <span>Oculus SDK</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://imagensempng.com.br/wp-content/uploads/2023/05/Logo-Google-Arcore-Png-1024x1024.png" alt="ARCore">
+                            <span>ARCore</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://developer.apple.com/assets/elements/icons/arkit/arkit-96x96_2x.png" alt="ARKit">
+                            <span>ARKit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Collaboration Card -->
+        <div class="skill-card" data-skill="collab">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration & Communication</h3>
+                </div>
+                <div class="card-back">
+                    <div class="skill-logos">
+                        <div class="logo-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Agile workflow</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Team collaboration</span>
+                        </div>
+                        <div class="logo-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </section>
+</section>
 
 
-    <section class="experience" id="experience">
-    <h2 class="heading">Experience</h2>
-
+<section class="experience" id="experience">
+    <h2 class="heading">Professional Journey</h2>
+    
     <div class="timeline">
-
         <!-- Left container -->
         <div class="container left">
-            <span class="year">Aug 2022 - Sep 2024</span>
-            <div class="content">
-                <h3>Junior Gameplay Developer</h3>
-                <h4>XREV Studios</h4>
-                <p>Worked on 3D games in Unity & Unreal Engine 5, implementing enemy AI, player mechanics, game logic systems, Blueprint scripting, and level design.</p>
+            <div class="timeline-content">
+                <span class="year">Aug 2022 - Sep 2024</span>
+                <div class="content">
+                    <div class="company-logo">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Junior Gameplay Developer</h3>
+                    <h4>XREV Studios</h4>
+                    <p>Worked on 3D games in Unity & Unreal Engine 5, implementing enemy AI, player mechanics, game logic systems, Blueprint scripting, and level design.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Unreal Engine 5</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Blueprint</span>
+                    </div>
+                </div>
             </div>
         </div>
         
         <!-- Right container -->
         <div class="container right">
-            <span class="year">Oct 2023 - Feb 2024</span>
-            <div class="content">
-                <h3>Indie Game Developer</h3>
-                <h4>XREV Studios</h4>
-                <p>Developed AR games using Unity and AR Foundation, implementing interactive gameplay and 3D assets.</p>
+            <div class="timeline-content">
+                <span class="year">Oct 2023 - Feb 2024</span>
+                <div class="content">
+                    <div class="company-logo">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Indie Game Developer</h3>
+                    <h4>XREV Studios</h4>
+                    <p>Developed AR games using Unity and AR Foundation, implementing interactive gameplay and 3D assets.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">AR Foundation</span>
+                        <span class="tech-tag">3D Modeling</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Left container -->
         <div class="container left">
-            <span class="year">June 2022</span>
-            <div class="content">
-                <h3>Gameplay Developer Intern</h3>
-                <h4>XREV Studios</h4>
-                <p>Learned and worked on 3D games in Unity, implementing enemy AI, player mechanics, and game logic systems.</p>
+            <div class="timeline-content">
+                <span class="year">June 2022</span>
+                <div class="content">
+                    <div class="company-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Gameplay Developer Intern</h3>
+                    <h4>XREV Studios</h4>
+                    <p>Learned and worked on 3D games in Unity, implementing enemy AI, player mechanics, and game logic systems.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">AI Programming</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Right container -->
         <div class="container right">
-            <span class="year">2022</span>
-            <div class="content">
-                <h3>Freelance Automation Developer</h3>
-                <h4>Self-Employment</h4>
-                <p>Built automation bots using Python and Selenium to streamline repetitive tasks for clients.</p>
+            <div class="timeline-content">
+                <span class="year">2022</span>
+                <div class="content">
+                    <div class="company-logo">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Freelance Automation Developer</h3>
+                    <h4>Self-Employment</h4>
+                    <p>Built automation bots using Python and Selenium to streamline repetitive tasks for clients.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Selenium</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </section>
+</section>
 
     <section class="work" id="work">
     <h2 class="heading">My Work</h2>
