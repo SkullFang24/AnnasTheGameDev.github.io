@@ -227,4 +227,83 @@ if (window.innerWidth <= 768) {
     });
 }
 
+// Work section animation
+const workItems = document.querySelectorAll('.work-item');
+const workObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('in-view');
+            }, index * 150);
+        }
+    });
+}, { threshold: 0.2 });
 
+// Observe each work item
+workItems.forEach(item => {
+    workObserver.observe(item);
+});
+
+// Video Modal functionality
+const videoModal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const videoClose = document.querySelector('.video-close');
+const viewVideoButtons = document.querySelectorAll('.view-video');
+
+// Open video modal
+viewVideoButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const videoSrc = this.getAttribute('data-video');
+        
+        // Set video source
+        modalVideo.src = videoSrc;
+        
+        // Show modal
+        videoModal.classList.add('show');
+        
+        // Play video automatically when modal opens
+        setTimeout(() => {
+            modalVideo.play();
+        }, 300);
+        
+        // Prevent body scrolling when modal is open
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Close video modal
+videoClose.addEventListener('click', function() {
+    closeVideoModal();
+});
+
+// Close modal when clicking outside video content
+videoModal.addEventListener('click', function(e) {
+    if (e.target === videoModal) {
+        closeVideoModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && videoModal.classList.contains('show')) {
+        closeVideoModal();
+    }
+});
+
+// Close video modal function
+function closeVideoModal() {
+    videoModal.classList.remove('show');
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+    
+    // Re-enable body scrolling
+    document.body.style.overflow = 'auto';
+}
+
+// Pause video when modal is closed
+modalVideo.addEventListener('ended', function() {
+    // Option: loop the video when it ends
+    // this.currentTime = 0;
+    // this.play();
+});

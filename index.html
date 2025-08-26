@@ -370,33 +370,96 @@
 
     <section class="work" id="work">
     <h2 class="heading">My Work</h2>
+    
     <div class="work-grid">
-        <!-- Work Item 1 -->
+        <!-- XYRO in Gearland (Meta) -->
         <div class="work-item">
-            <img src="project1.jpg" alt="Project 1 Screenshot">
-            <h3>Project Title 1</h3>
-            <p>Brief description of this project, the technologies used, and your role.</p>
-            <a href="#" target="_blank" class="btn">View Project</a>
+            <div class="work-image">
+                <img src="Images/VR-game.png" alt="XYRO in Gearland VR Experience">
+                <div class="work-overlay">
+                    <a href="https://www.meta.com/experiences/xyro-in-gearland/7343452839020413/" target="_blank" class="work-btn">View Experience</a>
+                </div>
+            </div>
+            <h3>XYRO in Gearland</h3>
+            <p>An immersive VR experience built with Unity for Meta platforms. Features interactive gameplay, 3D environments, and engaging mechanics.</p>
+            <div class="work-tech">
+                <span>Unity</span>
+                <span>VR</span>
+                <span>C#</span>
+                <span>3D Design</span>
+            </div>
+            <a href="https://www.meta.com/experiences/xyro-in-gearland/7343452839020413/" target="_blank" class="btn">View on Meta</a>
+        </div>
+        
+        <!-- Gameest Google Play Apps -->
+        <div class="work-item">
+            <div class="work-image">
+                <img src="Images/Mobile-games.png" alt="Gameest Mobile Games">
+                <div class="work-overlay">
+                    <a href="https://play.google.com/store/apps/developer?id=Gameest&hl=en" target="_blank" class="work-btn">View Games</a>
+                </div>
+            </div>
+            <h3>Mobile Game Collection</h3>
+            <p>A portfolio of mobile games published on Google Play Store. Featuring various genres from puzzle to action games.</p>
+            <div class="work-tech">
+                <span>Unity</span>
+                <span>Mobile</span>
+                <span>C#</span>
+                <span>Android</span>
+                <span>Hyper-Casual</span>
+            </div>
+            <a href="https://play.google.com/store/apps/developer?id=Gameest&hl=en" target="_blank" class="btn">View on Play Store</a>
+        </div>
+        
+        <!-- Placeholder for your other projects -->
+        <div class="work-item">
+            <div class="work-image">
+                <img src="Images/AR-Treasure-Hunt.jpeg" alt="AR Treasure Hunt">
+                <div class="work-overlay">
+                    <a href="#" class="work-btn view-video" data-video="Images/Treasure-Video.mp4">View Video</a>
+                </div>
+            </div>
+            <h3>AR Treasure Hunt</h3>
+            <p>An augmented reality game blending physical and digital environments. Developed with Unity and AR Foundation.</p>
+            <div class="work-tech">
+                <span>Unity</span>
+                <span>AR</span>
+                <span>C#</span>
+                <span>Mobile</span>
+            </div>
         </div>
 
-        <!-- Work Item 2 -->
-        <div class="work-item">
-            <img src="project2.jpg" alt="Project 2 Screenshot">
-            <h3>Project Title 2</h3>
-            <p>Brief description of this project, the technologies used, and your role.</p>
-            <a href="#" target="_blank" class="btn">View Project</a>
+        <!-- Video Popup Modal -->
+        <div class="video-modal" id="videoModal">
+            <div class="video-modal-content">
+                <span class="video-close">&times;</span>
+                <div class="video-container">
+                    <video controls id="modalVideo">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-
-        <!-- Work Item 3 -->
+        
+        <!-- Another placeholder -->
         <div class="work-item">
-            <img src="project3.jpg" alt="Project 3 Screenshot">
-            <h3>Project Title 3</h3>
-            <p>Brief description of this project, the technologies used, and your role.</p>
-            <a href="#" target="_blank" class="btn">View Project</a>
+            <div class="work-image">
+                <img src="https://via.placeholder.com/400x250/222222/bbbbbb?text=Project+Preview" alt="Project Preview">
+                <div class="work-overlay">
+                    <a href="#" class="work-btn">View Details</a>
+                </div>
+            </div>
+            <h3>3D Puzzle Game</h3>
+            <p>A 3D puzzle adventure with innovative mechanics and visually stunning environments created in Unreal Engine 5.</p>
+            <div class="work-tech">
+                <span>Unreal Engine 5</span>
+                <span>Blueprint</span>
+                <span>3D Design</span>
+            </div>
+            <a href="#" class="btn">Coming Soon</a>
         </div>
     </div>
-    </section>
-
+</section>
 
 
 <script src="script.js"></script>
